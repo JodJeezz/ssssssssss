@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ขอโทษนะครับ... 💝</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 600px;
+            margin: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            text-align: center;
+            animation: fadeIn 1.5s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        h1 {
+            color: #ff6b6b;
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .heart {
+            font-size: 4em;
+            animation: heartbeat 1.5s ease-in-out infinite;
+            margin: 20px 0;
+        }
+        
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        
+        /* รูปภาพและกรอบ */
+        .image-container {
+            margin: 30px 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #fff9f9 0%, #fff0f0 100%);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(255, 107, 107, 0.2);
+        }
+        
+        .couple-image {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            border: 5px solid white;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .couple-image:hover {
+            transform: scale(1.02);
+            box-shadow: 0 15px 40px rgba(255, 107, 107, 0.4);
+        }
+        
+        .image-caption {
+            margin-top: 15px;
+            color: #e64980;
+            font-size: 1.1em;
+            font-style: italic;
+        }
+        
+        .image-caption i {
+            font-size: 1.2em;
+        }
+        
+        .message {
+            font-size: 1.2em;
+            line-height: 1.8;
+            color: #333;
+            margin: 30px 0;
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 15px;
+            border-left: 5px solid #ff6b6b;
+            text-align: left;
+        }
+        
+        .promise-box {
+            background: linear-gradient(135deg, #fff5f5 0%, #ffe3e3 100%);
+            border-radius: 15px;
+            padding: 25px;
+            margin: 30px 0;
+        }
+        
+        .promise-title {
+            color: #e64980;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+        
+        .promise-list {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+        }
+        
+        .promise-list li {
+            margin: 15px 0;
+            padding-left: 30px;
+            position: relative;
+            color: #495057;
+        }
+        
+        .promise-list li:before {
+            content: "🌸";
+            position: absolute;
+            left: 0;
+        }
+        
+        .button {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ee5253 100%);
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            font-size: 1.2em;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin: 20px 0;
+            border: 2px solid transparent;
+        }
+        
+        .button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(238, 82, 83, 0.3);
+            border-color: white;
+        }
+        
+        .signature {
+            margin-top: 30px;
+            color: #666;
+            font-style: italic;
+        }
+        
+        .flower-decoration {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px 0;
+            font-size: 1.5em;
+        }
+        
+        /* เพิ่ม animation สำหรับรูป */
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .float-animation {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @media (max-width: 480px) {
+            .card {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            .message {
+                font-size: 1em;
+            }
+            
+            .couple-image {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="flower-decoration">
+            <span>🌸</span>
+            <span>🌼</span>
+            <span>🌸</span>
+        </div>
+        
+        <h1>💝 ขอโทษนะครับ 💝</h1>
+        
+        <div class="heart">💖</div>
+        
+        <!-- ส่วนแสดงรูปภาพ พร้อมคำขอโทษ -->
+        <div class="image-container float-animation">
+            <img 
+                src="9224.jpg" 
+                alt="รูปของเราสองคน" 
+                class="couple-image"
+                onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22 viewBox=%220 0 200 200%22><rect width=%22200%22 height=%22200%22 fill=%22%23ffcccc%22/><text x=%2250%22 y=%22110%22 font-family=%22Arial%22 font-size=%2214%22 fill=%22%23ff6b6b%22>💕 รูปของเราสองคน 💕</text></svg>'"
+            >
+            <div class="image-caption">
+                <i>💕 จ๊อดสำนึกผิดแว้วว 💕</i>
+                <br>
+                <span style="font-size: 0.9em; color: #666;">อย่าดุผมเลยย ผมเด็กน้อยผมไม่ทำเเว้ว</span>
+            </div>
+        </div>
+        
+        <div class="message">
+            <p style="text-align: center; font-weight: bold; color: #e64980;">ถึง ที่รักของผม...</p>
+            <p>พี่ปอ ค้าบบ ผมขอโทษน้า ต่อ ไปผมจะไม่ดื้อแว้วว</p>
+            <p>อย่าไม่รักผมเลยยย ผมจะไม่ทำไห้พี่เสียใจแล้วว</p>
+            <p>พี่ค้าบบบ รักพี่มากๆๆนะ</p>
+            <p style="text-align: right;">รักพี่ที่สุกเลยย</p>
+        </div>
+        
+        <div class="promise-box">
+            <div class="promise-title">💌 คำสัญญาจากใจ 💌</div>
+            <ul class="promise-list">
+                <li>จะไม่ทำให้พี่เสียใจอีกต่อไป</li>
+                <li>จะใส่ใจความรู้สึกของพี่มากขึ้น</li>
+                <li>จะรับฟังพี่ทุกเรื่องเสมอ</li>
+                <li>จะรักและดูแลพี่ให้ดีที่สุด</li>
+            </ul>
+        </div>
+        
+        <button class="button" onclick="forgiveMe()">
+            คลิกตรงนี้ถ้าให้อภัยผมนะ 💝
+        </button>
+        
+        <div class="signature">
+            จากคนที่รักเธอที่สุด 💕
+        </div>
+        
+        <div class="flower-decoration">
+            <span>🌺</span>
+            <span>🌷</span>
+            <span>🌺</span>
+        </div>
+    </div>
+
+    <script>
+        function forgiveMe() {
+            // สร้าง confetti effect
+            for (let i = 0; i < 10; i++) {
+                setTimeout(() => {
+                    createConfetti();
+                }, i * 200);
+            }
+            
+            // แสดงข้อความ
+            alert("💖 ขอบคุณที่ให้อภัยนะครับ รักเธอที่สุดเลย 💖");
+            
+            // เปลี่ยนข้อความปุ่ม
+            const button = document.querySelector('.button');
+            button.textContent = 'ขอบคุณที่ให้โอกาสผมนะ 💕';
+            button.style.background = 'linear-gradient(135deg, #51cf66 0%, #37b24d 100%)';
+            
+            // เพิ่มเอฟเฟคให้รูปกระพริบ
+            const image = document.querySelector('.couple-image');
+            image.style.transition = 'all 0.5s';
+            image.style.boxShadow = '0 0 50px rgba(255, 215, 0, 0.8)';
+            setTimeout(() => {
+                image.style.boxShadow = '0 10px 30px rgba(0,0,0,0.2)';
+            }, 1000);
+        }
+        
+        function createConfetti() {
+            const colors = ['#ff6b6b', '#f06595', '#cc5de8', '#5c7cfa', '#20c997', '#ffd43b'];
+            
+            for (let i = 0; i < 50; i++) {
+                const confetti = document.createElement('div');
+                confetti.style.position = 'fixed';
+                confetti.style.left = Math.random() * 100 + '%';
+                confetti.style.top = '-10px';
+                confetti.style.width = '10px';
+                confetti.style.height = '10px';
+                confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                confetti.style.borderRadius = '50%';
+                confetti.style.zIndex = '9999';
+                confetti.style.pointerEvents = 'none';
+                confetti.style.animation = `fall ${Math.random() * 3 + 2}s linear`;
+                
+                document.body.appendChild(confetti);
+                
+                setTimeout(() => {
+                    confetti.remove();
+                }, 5000);
+            }
+        }
+        
+        // เพิ่ม animation fall ด้วย CSS
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes fall {
+                to {
+                    transform: translateY(100vh) rotate(360deg);
+                }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>
